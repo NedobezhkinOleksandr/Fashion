@@ -35,6 +35,8 @@ gulp.task('html', function () {
     .pipe(sync.stream());
 });
 
+gulp.task('build', gulp.series('styles', 'html', 'icons', 'images'));
+
 gulp.task('serve', function () {
   sync.init({
     server: './dist'
@@ -46,4 +48,6 @@ gulp.task('serve', function () {
   gulp.watch('src/icons/*', gulp.series('icons'));
 });
 
-gulp.task('default', gulp.series('styles', 'html', 'icons', 'images', 'serve'));
+
+
+gulp.task('default', gulp.series('build', 'serve'));
