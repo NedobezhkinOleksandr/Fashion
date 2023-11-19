@@ -1,0 +1,75 @@
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__main">
+          <section class="footer__left">
+            <h2 class="footer__title">
+              your logo
+            </h2>
+            <p class="footer__paragraph">
+              We earned a reputation of being good at what we do.
+              <br>
+              Let us take your online shop to new dimension in
+              success!
+            </p>
+            <a class="footer__link" href="https://maps.app.goo.gl/dmB53YDmoZXccWSk7">
+              Comilla, Bangladesh 3500
+            </a>
+            <a class="footer__mailto" href="mailto:kawsarahmed0210@gmail.com">
+              kawsarahmed0210@gmail.com
+            </a>
+            <a class="footer__phone" href="tel:01647470457">
+              01647470457
+            </a>
+            <div class="footer__socials">
+              <a class="footer__social footer__social--fb" href="https://www.facebook.com/profile.php?id=100005534705228">
+              </a>
+              <a class="footer__social footer__social--ig" href="https://instagram.com/touch_n?igshid=NzZlODBkYWE4Ng%3D%3D&utm_source=qr">
+              </a>
+              <a class="footer__social footer__social--tw" href="#">
+              </a>
+              <a class="footer__social footer__social--li" href="https://www.linkedin.com/in/oleksandr-nedobezhkin-86867b274/">
+              </a>
+            </div>
+          </section>
+          <section class="footer__right">
+            <h2 class="footer__title">
+              receive email updates
+            </h2>
+            <form class="footer__form">
+              <input
+                class="footer__input"
+                type="text"
+                name="useremail"
+                placeholder="Your Email Address"
+              >
+              <button class="footer__button" type="submit">
+                join
+              </button>
+            </form>
+          {% set titles = ['shop', 'help', 'about'] %}
+          {% set links = ['Shop', 'FAQ', 'Journal'] %}
+          {% set links2 = ['Collection', 'Privacy Policy', 'Our Story'] %}
+          {% set links3 = ['Outlet', 'Terms and Conditions', 'Contact'] %}
+          {% set links4 = ['Lookbook', 'Return and Exchanges', 'Store Location'] %}
+          <div class="footer__navs">
+            {% for index in range(titles|length) %}
+              <div class="footer__nav">
+                <h3 class="footer__section">
+                  {{ titles[index] }}
+                </h3>
+                <a class="footer__a" href="#">{{ links[index] }}</a>
+                <a class="footer__a" href="#">{{ links2[index] }}</a>
+                <a class="footer__a" href="#">{{ links3[index] }}</a>
+                <a class="footer__a" href="#">{{ links4[index] }}</a>
+              </div>
+            {% endfor %}
+          </div>
+          </section>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        Copyright © 2020 . Your company name  All rights reserved
+      </div>
+    </footer>
+  </body>
+</html>

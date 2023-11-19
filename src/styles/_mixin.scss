@@ -1,0 +1,26 @@
+@import "_var.scss";
+
+@mixin hover {
+  &:hover {
+    color: $colorRed;
+  }
+}
+
+@mixin img {
+  img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+}
+
+@mixin icon {
+  position: relative; 
+  height: 18px;
+  width: 18px;
+  text-decoration: none;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 10px;
+}

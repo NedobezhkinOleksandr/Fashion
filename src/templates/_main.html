@@ -1,0 +1,77 @@
+    <main class="body__main main">
+      <div class="container">
+        <section class="main__familiar">
+          <img src="../images/2.png" alt="human picture">
+          <img src="../images/3.png" alt="human picture">
+          <img src="../images/4.png" alt="human picture">
+          <img src="../images/5.png" alt="human picture">
+        </section>
+        <section class="main__section">
+          <h3 class="main__title">
+            women's fashion
+          </h3>
+          <div class="main__subtitle">
+            Shop our new arrivals from established brands
+          </div>
+          {% set images = [8, 9, 6, 7] %}
+          <div class="main__items">
+            {% for image in images %}
+            <div class="item">
+              <img src="../images/{{ image }}.png" alt="human picture">
+              <div class="item__note">igure</div>
+              <div class="item__name">green muscle fit polo shirt</div>
+              <span class="item__price">$229.00</span>
+              <span class="item__discount">$129.00</span>
+            </div>
+            {% endfor %}
+          </div>
+        </section>
+        <section class="main__section">
+          <h3 class="main__title">
+            men's fashion
+          </h3>
+          <div class="main__subtitle">
+            Shop our new arrivals from established brands
+          </div>
+          {% set images = [13, 11, 10, 12] %}
+          <div class="main__items">
+            {% for image in images %}
+            <div class="item">
+              <img src="../images/{{ image }}.png" alt="human picture">
+              <div class="item__note">igure</div>
+              <div class="item__name">green muscle fit polo shirt</div>
+              <span class="item__price">$229.00</span>
+              <span class="item__discount">$129.00</span>
+            </div>
+            {% endfor %}
+          </div>
+        </section>
+        <section class="main__section">
+          <h3 class="main__title">
+            avone styles
+          </h3>
+          <div class="main__subtitle main__subtitle--last">
+            Choose Your Favorite Color
+          </div>
+          <div class="main__styles">
+            <img src="../images/14.png" alt="human picture">
+            <img src="../images/15.png" alt="human picture">
+            <div class="main__pictureright">
+              <img src="../images/16.png" alt="human picture">
+            </div>
+          </div>
+        </section>
+      </div>
+      <section class="main__section main__section--last">
+        <img src="../images/footer.png" alt="Your Image">
+        <div class="main__collection">
+          <div class="main__note">
+            own the day
+          </div>
+          <h1 class="main__title">TACHEN 19</h1>
+          <button class="button">
+            <a href="#">shop collection</a>
+          </button>
+        </div>
+      </section>
+    </main>

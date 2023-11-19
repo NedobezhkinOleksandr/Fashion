@@ -1,0 +1,23 @@
+@import "_var.scss";
+
+.item {
+  font-size: 15px;
+  text-transform: uppercase;
+  text-align: left;
+  line-height: 22.5px;
+  &__note {
+    margin-top: 38px;
+    font-weight: 300;
+  }
+  &__name {
+    font-weight: 600;
+    padding: 3px 0;
+  }
+  &__price {
+    text-decoration: line-through;
+    margin-right: 15px;
+  }
+  &__discount {
+    color: $colorRed;
+  }
+}

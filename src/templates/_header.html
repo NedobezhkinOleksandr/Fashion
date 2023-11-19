@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fashion</title>
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;800&display=swap" rel="stylesheet">
+  </head>
+  <body class="body">
+    <header class="body__header header">
+      <nav class="header__nav nav">
+        <a href="#" class="nav__logo">
+          your logo
+        </a>
+        {% set sections = ['home', 'shop', 'lookbook', 'features', 'pages', 'blog'] %}
+        <ul class="nav__list">
+          {% for section in sections %}
+          <li class="nav__middle">
+            <a href="#" class="nav__link">{{ section }}</a>
+          </li>
+          {% endfor %}
+        </ul>
+        <div class="nav__search">
+          <a href="#" class="nav__icon nav__icon--search"></a>
+          <a href="#" class="nav__icon nav__icon--like"></a>
+          <a href="#" class="nav__icon nav__icon--cart"></a>
+        </div>
+      </nav>
+      <div class="header__info info">
+        <img class="info__picture" src="../images/header.png" alt="Your Image">
+        <div class="info__selection">
+          <div class="info__subtitle">
+            new trend
+          </div>
+          <h1 class="info__title">collusion</h1>
+          <div class="info__subtitle">An exclusive selection of this season's trends.</div>
+          <button class="button">
+            <a href="#">discover</a>
+          </button>
+          <button class="button">
+            <a href="#">shop now</a>
+          </button>
+        </div>
+      </div>
+
+    </header>
+

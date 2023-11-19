@@ -1,0 +1,121 @@
+@import "_mixin.scss";
+@import "_var.scss";
+
+.footer {
+  padding-top: 110px;
+  background-color: #f2f8fc;
+  &__main {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding-bottom: 110px;
+  }
+  &__title {
+    font-size: 25px;
+    line-height: 37.5px;
+    text-transform: uppercase;
+  }
+  &__paragraph {
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 40px;
+  }
+  &__link {
+    display: block;
+    margin-bottom: 15px;
+    @include hover;
+  }
+  &__mailto {
+    display: inline-block;
+    padding-bottom: 5px;
+    border-bottom: 1px solid $colorDark;
+    &:hover {
+      color: $colorRed;
+      border-bottom: 1px solid $colorRed;
+    }
+  }
+  &__phone {
+    margin-top: 5px;
+    display: block;
+    @include hover;
+  }
+  &__socials {
+    margin-top: 15px;
+  }
+  &__social {
+    @include icon;
+    display: inline;
+
+    &--fb {
+      background-image: url(../icons/facebook.svg);
+      margin-right: 18px;
+      &:hover {
+        background-image: url(../icons/facebook\ \(hover\).svg);
+      }
+    }
+    &--ig {
+      background-image: url(../icons/instagram.svg);
+      margin-right: 18px;
+      &:hover {
+        background-image: url(../icons/instagram\ \(hover\).svg);
+      }
+    }
+    &--tw {
+      background-image: url(../icons/twitter.svg);
+      margin-right: 18px;
+      &:hover {
+        background-image: url(../icons/twitter\(hover\).svg);
+      }
+    }
+    &--li {
+      background-image: url(../icons/linkedin.svg);
+      &:hover {
+        background-image: url(../icons/linkedin\ \(hover\).svg);
+      }
+    }
+  }
+  &__form {
+    position: relative;
+    display: block;
+    margin-top: 25px;
+    margin-bottom: 70px;
+  }
+  &__input {
+    position: relative;
+    border: none;
+    width: 100%;
+    padding: 10px 10px;
+  }
+  &__button {
+    position: absolute;
+    cursor: pointer;
+    text-transform: uppercase;
+    background-color: #fff;
+    border: none;
+    right: 0;
+    padding: 5px 5px;
+    margin: 5px 5px;
+    @include hover;
+  }
+  &__navs {
+    display: flex;
+    justify-content: space-between;
+    text-align: left;
+  }
+  &__section {
+    text-transform: uppercase;
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 600;
+    margin-bottom: 7px;
+  }
+  &__a {
+    display: block;
+    margin-top: 20px;
+    @include hover;
+  }
+  &__bottom {
+    text-align: center;
+    padding: 35px;
+    background-color: #e7f5f8;
+  }
+}

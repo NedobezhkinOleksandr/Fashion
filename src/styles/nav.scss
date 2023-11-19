@@ -1,0 +1,54 @@
+@import "_mixin.scss";
+
+.nav {
+  display: flex;
+  justify-content: space-evenly;
+  text-transform: uppercase;
+  &__logo {
+    font-size: 28px;
+    line-height: 42px;
+    font-weight: 700;
+    margin: auto 0;
+    @include hover;
+  }
+  &__link {
+    @include hover;
+  }
+  &__middle {
+    display: block;
+    font-size: 18px;
+    line-height: 27px;
+    padding: 17px;
+  }
+  &__list {
+    display: flex;
+  }
+  &__search {
+    display: flex;
+    align-items: center;
+  }
+  &__icon {
+    display: block;
+    @include icon;
+    &--search {
+      background-image: url(../icons/search.svg);
+      margin-right: 48px;
+      &:hover {
+        background-image: url(../icons/search\(hover\).svg);
+      }
+    }
+    &--cart {
+      background-image: url(../icons/cart.png);
+      &:hover {
+        background-image: url(../icons/cart\(hover\).png);
+      }
+    }
+    &--like {
+      background-image: url(../icons/heart.png);
+      margin-right: 48px;
+      &:hover {
+        background-image: url(../icons/heart\(hover\).png);
+      }
+    }
+  }
+}
