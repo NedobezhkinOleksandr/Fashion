@@ -7,13 +7,11 @@
   text-transform: uppercase;
   background-color: #22262a;
   height: 35px;
+  color: #fff;
+  font-weight: 500;
+  padding: 4px 29px;
+  @include hover;
   &:first-of-type {
     margin-right: 30px;
-  }
-  a {
-    color: #fff;
-    font-weight: 500;
-    padding: 4px 25px;
-    @include hover;
   }
 }
